@@ -20,14 +20,20 @@ useEffect(() => {
     })
 }, [])
 
-
+  var popular = topMovies.slice(1, 5)
 
 
   return (
-    <div >
-      {topMovies && topMovies.map((m) => {
-        <ListCard movie={m}/>
+    <div className="relative justify-items-center mt-16">
+    <div className="flex flex-col items-end mr-32 justify-items-center"> 
+      <select className="select select-ghost w-56 max-w-xs ">
+      <option disabled selected>VER : </option>
+      <option>Svelte</option>
+      </select>
+      {topMovies && popular.map((m) => {
+       return <ListCard movie={m}/>
       })}
+    </div>
     </div>
   );
 }
