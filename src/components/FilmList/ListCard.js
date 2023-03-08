@@ -3,14 +3,14 @@ import React from "react";
 
 
 export default function ListCard(movie) {
-    console.log(movie.movie.title)
+    
 
-    if (!movie.movie) {
-        <div >
-     cargando..
-    </div>
+    if (movie.pelis === "misPelis") {
+      return(
+       <h1>esta es mi peli</h1>
+      )
     }
-
+    console.log(movie)
   return (
     <div className="my-2 ">
     <div style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w500/${movie.movie.backdrop_path})`}} 

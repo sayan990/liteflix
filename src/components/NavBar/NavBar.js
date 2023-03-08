@@ -7,10 +7,10 @@ export default function NavBar() {
   return (
     <div className="backdrop-opacity-0 navbar flex ">
   <div className="">
-    <a className="ml-32 mt-4 mr-16 normal-case text-4xl text-teal-400" href="a">LITEFLIX</a>
+    <a className="ml-32 mt-4 mr-16 normal-case text-4xl text-teal-400" href="/">LITEFLIX</a>
   </div>
   <div className="justify-start">
-    <a className="ml-12 mt-4  mr-96 normal-case text-xl text-white " href="a">+ AGREGAR PELICULA</a>
+    <a className="ml-12 mt-4  mr-96 normal-case text-xl text-white " href="/agregarPelicula">+ AGREGAR PELICULA</a>
   </div>
   <div className="ml-96 ">
   <div className="">
