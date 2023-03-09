@@ -26,23 +26,25 @@ useEffect(() => {
 }, [])
   const misPelis = JSON.parse(pelisLocal)
   var popular = topMovies.slice(1, 5)
-
+  console.log(misPelis)
   
 
   return (
-    <div className="relative justify-items-center mt-16">
+    <div className="relative justify-items-center text-center">
     <div className="flex flex-col items-end mr-32 justify-items-center"> 
-      <select className="select select-ghost w-56 max-w-xs " onChange={handleSelect}>
+      <select className="select select-ghost w-40 max-w-xs " onChange={handleSelect}>
       <option  value="populares">Populares </option>
       <option  value="misPelis">Mis Pelis </option>
       </select>
       {(ver === "populares") && popular.map((m) => {
        return <ListCard movie={m} pelis={ver}/>
       })}
-      {(ver === "misPelis") && misPelis.map((m) => {
+      {(ver === "misPelis" && misPelis) && misPelis.map((m) => {
        return <ListCard movie={m} pelis={ver}/>
       })}
-    </div>
+      {(ver === "misPelis" && misPelis.length === 0) &&
+       <h1 className="justify-items-center text-center text-white text-lg">Aun no haz subido ninguna pelicula</h1>}
+    </div>  
     </div>
   );
 }

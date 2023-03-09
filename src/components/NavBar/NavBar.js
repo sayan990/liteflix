@@ -7,30 +7,30 @@ export default function NavBar() {
   return (
     <div className="backdrop-opacity-0 navbar flex ">
   <div className="">
-    <a className="ml-32 mt-4 mr-16 normal-case text-4xl text-teal-400" href="/">LITEFLIX</a>
+    <a className="ml-32 mt-4 normal-case text-3xl text-teal-400" href="/">LITEFLIX</a>
   </div>
   <div className="justify-start">
-    <a className="ml-12 mt-4  mr-96 normal-case text-xl text-white " href="/agregarPelicula">+ AGREGAR PELICULA</a>
+    <a className="ml-12 mt-4 normal-case text-base text-white  mr-96" href="/agregarPelicula">+ AGREGAR PELICULA</a>
   </div>
-  <div className="ml-96 ">
-  <div className="">
-    <div className="dropdown dropdown-end ml-52">
+  <div className=" ">
+  <div className="ml-72">
+    <div className="dropdown dropdown-end ">
       <label tabIndex={0} className="btn btn-ghost btn-circle">
-      <div className="w-10 rounded-full">
+      <div className="w-6 rounded-full">
           <img src="https://cdn-icons-png.flaticon.com/512/4543/4543046.png"  alt="una foto"/>
         </div>
       </label>
     </div>
-    <div className="dropdown dropdown-end ml-8">
+    <div className="dropdown dropdown-end ">
       <label tabIndex={0} className="btn btn-ghost btn-circle">
-      <div className="w-10 rounded-full">
+      <div className="w-6 rounded-full">
           <img src="https://cdn-icons-png.flaticon.com/512/4971/4971550.png"  alt="una foto"/>
         </div>
       </label>
     </div>
-    <div className="dropdown dropdown-end ml-8">
+    <div className="dropdown dropdown-end ">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
+        <div className="w-6 rounded-full">
           <img src="https://cdn-icons-png.flaticon.com/512/4709/4709876.png"  alt="una foto"/>
         </div>
       </label>
