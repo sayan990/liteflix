@@ -42,8 +42,9 @@ useEffect(() => {
       {(ver === "misPelis" && misPelis) && misPelis.map((m) => {
        return <ListCard movie={m} pelis={ver}/>
       })}
-      {(ver === "misPelis" && misPelis.length === 0) &&
+      {(ver === "misPelis" && (!misPelis || misPelis.length === 0) ) &&
        <h1 className="justify-items-center text-center text-white text-lg">Aun no haz subido ninguna pelicula</h1>}
+
     </div>  
     </div>
   );
