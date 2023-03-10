@@ -26,7 +26,7 @@ useEffect(() => {
 }, [])
   const misPelis = JSON.parse(pelisLocal)
   var popular = topMovies.slice(1, 5)
-  console.log(misPelis)
+  
   
 
   return (
@@ -39,7 +39,7 @@ useEffect(() => {
       {(ver === "populares") && popular.map((m) => {
        return <ListCard movie={m} pelis={ver}/>
       })}
-      {(ver === "misPelis" && misPelis) && misPelis.map((m) => {
+      {(ver === "misPelis" && misPelis) && misPelis.slice(0, 4).map((m) => {
        return <ListCard movie={m} pelis={ver}/>
       })}
       {(ver === "misPelis" && (!misPelis || misPelis.length === 0) ) &&
