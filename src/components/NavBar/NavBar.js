@@ -5,9 +5,9 @@ import { useEffect, useState} from "react";
 export default function NavBar() {
 
   return (
-    <div className="backdrop-opacity-0 navbar flex ">
+    <div className="backdrop-opacity-0 navbar flex md:bg-black sm:bg-black">
   <div className="">
-    <a className="ml-32 mt-4 normal-case text-3xl text-teal-400" href="/">LITEFLIX</a>
+    <a className="ml-32 mt-4 normal-case text-3xl text-teal-400 lg:bg-black" href="/">LITEFLIX</a>
   </div>
   <div className="justify-start">
     <a className="ml-12 mt-4 normal-case text-base text-white  mr-96" href="/agregarPelicula">+ AGREGAR PELICULA</a>
