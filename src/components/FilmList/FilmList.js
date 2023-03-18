@@ -30,9 +30,9 @@ useEffect(() => {
   
 
   return (
-    <div className="relative justify-items-center text-center">
-    <div className="flex flex-col items-end mr-32 justify-items-center"> 
-      <select className="select select-ghost w-40 max-w-xs " onChange={handleSelect}>
+    <div className="relative text-center justify-center justify-items-center bg-zinc-800 px-12">
+    <div className="flex flex-col justify-center justify-items-center"> 
+      <select className="select select-ghost w-40 max-w-xs ml-16 my-6 text-white" onChange={handleSelect}>
       <option  value="populares">Populares </option>
       <option  value="misPelis">Mis Pelis </option>
       </select>

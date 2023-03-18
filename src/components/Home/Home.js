@@ -37,20 +37,22 @@ if(isLoading){
     <div style={{ backgroundImage: `url(https://image.tmdb.org/t/p/original/${bgImg})`}} 
     className={`justify-center  bg-no-repeat bg-cover bg-center h-screen w-screen`} >
       <NavBar/>
-      <div className="flex flex-col justify-start absolute bottom-28 ml-20">
-      <h3 className="mt-6 text-start tracking-tight text-white">ORIGINAL DE LITEFLIX</h3>
-      <h1 className="text-start text-8xl font-bold tracking-tight text-teal-400">{topMovie[0].title.toUpperCase()}</h1>
-      <div className="flex flex-row">
-      <div className="mt-4 flex bg-zinc-900 flex-row px-10 py-2">
-        <img className="w-4 h-4 mr-2" src="https://cdn-icons-png.flaticon.com/512/9370/9370122.png"  alt="una foto"/>
-        <button className=" text-white">REPRODUCIR</button>
+      <div className="text-center justify-center justify-items-center">
+      <div className="flex flex-col text-center justify-center justify-items-center">
+      <h3 className="mt-72 text-center tracking-tight text-xl text-white">ORIGINAL DE LITEFLIX</h3>
+      <h1 className="text-center text-6xl font-bold tracking-tight text-teal-400">{topMovie[0].title.toUpperCase()}</h1>
       </div>
-      <div className="ml-6 mt-4 flex flex-row px-12  backdrop-opacity-20 backdrop-invert bg-black/30">
-        <button className=" text-white">+ MI LISTA</button>
+      <div className="flex flex-col bg-gradient-to-t from-zinc-800 mt-5 text-center justify-center justify-items-center">
+      <div className=" flex p-5 w-56 ml-24 bg-zinc-800 flex-row text-center justify-center justify-items-center">
+        <img className="w-4 h-4 mr-2 mt-1" src="https://cdn-icons-png.flaticon.com/512/9370/9370122.png"  alt="una foto"/>
+        <button className=" text-white text-center text-xl">REPRODUCIR</button>
+      </div>
+      <div className=" flex flex-col p-5 mt-4 w-56 ml-24  backdrop-opacity-20 backdrop-invert bg-zinc-800/30">
+        <button className=" text-white text-xl">+ MI LISTA</button>
       </div>
       </div>
       </div>
-      <FilmList/>
+       <FilmList/>
     </div>
   );
 }
